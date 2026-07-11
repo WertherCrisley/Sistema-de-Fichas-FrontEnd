@@ -2,6 +2,7 @@ import Nav from '../../componente/navBar'
 import { useState, useEffect } from "react";
 import api from "../../services/api";
 import { io } from "socket.io-client";
+import bipe from "../../../public/bipe.mp3"
 import './visor.css'
 const socket = io('https://sistema-de-fichas-backend.onrender.com');
 
@@ -26,8 +27,8 @@ function ClienteVisor() {
     }
 
     function anunciarFicha(ficha) {
-        // toca um bipe antes de falar
-        const bipe = new Audio('/beep.mp3'); // coloca o arquivo em public/beep.mp3
+
+        const bipe = new Audio(bipe);
         bipe.play();
 
         bipe.onended = () => {
