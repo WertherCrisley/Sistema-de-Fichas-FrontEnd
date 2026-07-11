@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import api from "../../services/api";
 import { io } from "socket.io-client";
 import './visor.css'
-const socket = io('http://localhost:5003');
+const socket = io('https://sistema-de-fichas-backend.onrender.com');
 
 
 

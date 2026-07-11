@@ -1,16 +1,70 @@
-# React + Vite
+# 🎫 Sistema de Fichas - Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Sistema web desenvolvido para gerenciamento de filas através de fichas de atendimento em tempo real.
 
-Currently, two official plugins are available:
+A aplicação permite criar, visualizar e controlar fichas utilizando uma interface moderna desenvolvida em React, consumindo uma API própria hospedada na Render.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Demonstração
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🌐 Front-End:
+https://werthercrisley.github.io/Sistema-de-Fichas-FrontEnd/
 
-## Expanding the Oxlint configuration
+🔗 Backend :
+https://github.com/WertherCrisley/Sistema-de-Fichas-BackEnd
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+
+---
+
+# 📌 Sobre o Projeto
+
+O **Sistema de Fichas** foi desenvolvido para simular um sistema de gerenciamento de filas, permitindo o controle de atendimentos através de fichas numeradas.
+
+O Front-End foi desenvolvido utilizando **React com Vite**, possuindo comunicação com um backend próprio desenvolvido em Node.js, Express e Prisma conectado ao banco MongoDB.
+
+A aplicação utiliza comunicação em tempo real através do Socket.IO para atualizar as filas automaticamente.
+
+---
+
+# 🛠️ Tecnologias Utilizadas
+
+## Front-End
+
+- ⚛️ React
+- ⚡ Vite
+- 🟨 JavaScript
+- 🎨 CSS
+- 🔀 React Router DOM
+- 🌐 Axios
+- 🔄 Socket.IO Client
+
+---
+
+## Back-End
+
+- 🟢 Node.js
+- 🚂 Express
+- 🔷 Prisma ORM
+- 🍃 MongoDB
+- 🔄 Socket.IO
+
+---
+
+## Hospedagem
+
+Front-End:
+
+- GitHub Pages
+
+Back-End:
+
+- Render
+
+Banco de Dados:
+
+- MongoDB Atlas
+
+---
+
+# 📂 Estrutura do Projeto
