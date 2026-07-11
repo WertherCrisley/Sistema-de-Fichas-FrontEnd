@@ -1,0 +1,130 @@
+:root {
+    --bg-deep: #0f1115;
+    --bg-card: #1a1d24;
+    --accent-1: #6c5ce7;
+    --accent-2: #00d2a8;
+    --accent-3: #ff7a59;
+    --text-main: #f1f2f6;
+    --text-muted: #9aa0ab;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.Container {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    padding: 60px 20px;
+    background: radial-gradient(circle at top, #1c1f26 0%, var(--bg-deep) 70%);
+}
+
+.Container a {
+    text-decoration: none;
+    width: 100%;
+    max-width: 520px;
+}
+
+.CriarFicha,
+.ChamarFicha,
+.VisualizarFicha {
+    position: relative;
+    width: 100%;
+    padding: 32px 36px;
+    border-radius: 16px;
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.CriarFicha::before,
+.ChamarFicha::before,
+.VisualizarFicha::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    transition: width 0.25s ease;
+}
+
+.CriarFicha::before {
+    background: var(--accent-1);
+}
+
+.ChamarFicha::before {
+    background: var(--accent-2);
+}
+
+.VisualizarFicha::before {
+    background: var(--accent-3);
+}
+
+.CriarFicha p,
+.ChamarFicha p,
+.VisualizarFicha p {
+    margin: 0 0 8px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.CriarFicha h6,
+.ChamarFicha h6,
+.VisualizarFicha h6 {
+    margin: 0;
+    font-size: 0.92rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.CriarFicha:hover,
+.ChamarFicha:hover,
+.VisualizarFicha:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.CriarFicha:hover::before,
+.ChamarFicha:hover::before,
+.VisualizarFicha:hover::before {
+    width: 100%;
+    opacity: 0.08;
+}
+
+.CriarFicha:hover {
+    border-color: var(--accent-1);
+}
+
+.ChamarFicha:hover {
+    border-color: var(--accent-2);
+}
+
+.VisualizarFicha:hover {
+    border-color: var(--accent-3);
+}
+
+@media (max-width: 600px) {
+
+    .CriarFicha,
+    .ChamarFicha,
+    .VisualizarFicha {
+        padding: 24px 22px;
+    }
+
+    .CriarFicha p,
+    .ChamarFicha p,
+    .VisualizarFicha p {
+        font-size: 1.15rem;
+    }
+}

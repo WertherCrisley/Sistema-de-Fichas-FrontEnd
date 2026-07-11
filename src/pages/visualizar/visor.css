@@ -1,0 +1,91 @@
+.container-visu {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background-color: #e6f4f3;
+
+}
+
+.historico {
+    width: 20%;
+    height: 100%;
+    background-color: #0f5257;
+    border-right: 2px solid #0a3d40;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: #ffffff;
+    border: 1px solid #cfe8e6;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 60, 60, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 60, 60, 0.25);
+}
+
+.box p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+    color: #0f5257;
+}
+
+.box span {
+    font-weight: 700;
+    color: #128c7e;
+}
+
+.main {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #d7f0ee);
+}
+
+.main h2 {
+    font-size: 4.5rem;
+    margin: 0;
+    color: #0a3d40;
+    text-shadow: 0 3px 6px rgba(0, 60, 60, 0.2);
+    letter-spacing: 1px;
+}
+
+.main h6 {
+    font-size: 1.6rem;
+    margin-top: 12px;
+    color: #128c7e;
+    font-weight: 500;
+}
+
+/* botao de ativar som */
+.overlay-som {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.overlay-som button {
+    padding: 20px 40px;
+    font-size: 24px;
+    cursor: pointer;
+}

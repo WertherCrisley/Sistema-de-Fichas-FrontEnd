@@ -1,0 +1,9 @@
+     {/* quando vier do backend, isso vira: */}
+                            {/* fichas.map(f => (
+                    <tr key={f.id}>
+                        <td>{f.codigo}</td>
+                        <td>{f.tipo}</td>
+                        <td>{f.tempoEspera}</td>
+                        <td><button onClick={() => chamar(f.id)}>Chamar</button></td>
+                    </tr>
+                )) */}

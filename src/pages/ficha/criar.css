@@ -1,0 +1,121 @@
+.container {
+    width: 100%;
+    /* min-height: 100%; */
+    display: flex;
+    background-color: #0f5257;
+
+}
+
+.Part1 {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Part1 h1 {
+    margin-bottom: 80px;
+    color: white;
+}
+
+.Part1 button {
+    color: rgb(255, 255, 255);
+    background-color: #128c7e;
+    padding: 30px 60px;
+    border: solid 4px #7fd8c9;
+    border-radius: 20px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Part1 button:hover {
+    transform: scale(1.2);
+}
+
+.Part2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tipo button {
+    margin: 10px;
+    width: 250px;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    background-color: #128c7e;
+    border: solid 4px #7fd8c9;
+    border-radius: 20px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Part2 button:hover {
+    transform: scale(1.1);
+}
+
+.btn-criar {
+    background-color: #0a3d40;
+    width: 200px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all ease 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Part3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.Part3 h2 {
+    margin-bottom: 20px;
+}
+
+.Part3 h3 {
+    font-size: 40px;
+}
+
+.btnVoltar {
+    background-color: rgba(255, 255, 255, 0.034);
+    border: none;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btnVoltar:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}

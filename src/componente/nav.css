@@ -1,0 +1,18 @@
+.btnVoltar {
+    background-color: rgba(255, 255, 255, 0.041);
+    margin-top: 15px;
+    margin-left: 10px;
+    border: none;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btnVoltar:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
