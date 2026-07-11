@@ -6,8 +6,8 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/Sistema-de-Fichas-FrontEnd">
+    <HashRouter basename="/Sistema-de-Fichas-FrontEnd">
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 )
