@@ -1,3 +1,6 @@
+# SISTEMA DESATIVADO!!!
+
+
 # 🎫 Sistema de Fichas - Front-End
 
 Sistema web desenvolvido para gerenciamento de filas através de fichas de atendimento em tempo real.
